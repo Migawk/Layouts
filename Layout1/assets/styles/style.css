@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Plus Jakarta';
+    src: url('../fonts/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta';
+    color: #fff;
+}
+
+body {
+    background: #111111;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 120px;
+    background: #242424;
+    font-weight: 700;
+    height: 100%;
+}
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    list-style: none;
+}
+nav > ul > li > button {
+    color: #bdbdbd;
+    background: none;
+    border: none;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.selectedNav {
+    color: #fff;
+    transition: .5s;
+}
+.unselectedNav {
+    color: #bdbdbd;
+    transition: .25s;
+}
+.logo {
+    font-size: 24px;
+}
+
+.register {
+    background: #3a3a3a;
+    padding: 16px 32px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+}
+
+article {
+    padding: 128px 120px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.wrapper {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: linear-gradient(0deg, #111617, #111111);
+}
+.wrapperDate {
+    font-size: 20px;
+}
+.wrapperName {
+    font-weight: 800;
+    font-size: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 100%;
+    width: 60%;
+}
+.wrapperNameBox {
+    position: relative;
+    top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    background-color: #707070;
+    width: min-content;
+    height: min-content;
+    letter-spacing: 1px;
+    padding: 12px 16px;
+    font-weight: 800;
+    line-height: 32px;
+    height: 90px;
+}
+.wrapperDescription {
+    color: #a9aaaa;
+    font-size: 22px;
+    font-weight: 500;
+    width: 60%;
+}
+
+.wrapperButtons {
+    display: flex;
+    gap: 48px;
+}
+.wrapperButtonsFirst {
+    background: linear-gradient(-45deg, #00D4FC, #00FEE3);
+    color: #252525;
+    border: none;
+    padding: 20px 40px;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+}
+.wrapperButtonsSecond {
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 20px 40px;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
