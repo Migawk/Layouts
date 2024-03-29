@@ -1,0 +1,338 @@
+@import 'https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;1,500&display=swap'
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: "Work Sans", sans-serif
+    
+main
+    margin: 0 256px
+article
+    display: flex
+    flex-direction: column
+    gap: 80px
+    margin: 80px 0
+.list
+    display: flex
+    flex-wrap: wrap
+    max-height: min-content
+    gap: 20px
+    &>*
+        width: calc(33% - 20px)
+.article
+    display: flex
+    flex-direction: column
+    padding: 16px
+    gap: 16px
+    border: 1px solid #E8E8EA
+    border-radius: 12px
+    &Image
+        max-height: 200px
+        flex: 1
+        border-radius: 6px
+        overflow: hidden
+        object-fit: cover
+    &Name>a
+        display: block
+        height: 56px
+        font-size: 24px
+        text-decoration: none
+        color: #181A2A
+.shortInfo
+    display: flex
+    align-items: center
+    gap: 20px
+    color: #97989F
+    &Author
+        display: flex
+        align-items: center
+        gap: 12px
+        &>img
+            border-radius: 50%
+            object-fit: cover
+        &>a
+            text-decoration: none
+            color: #97989F
+            font-weight: 600
+.topic
+    background: rgba(75, 107, 251, .05)
+    color: #4B6BFB
+    padding: 4px 10px
+    width: min-content
+    border-radius: 6px
+    font-size: 14px
+header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0 256px
+    padding: 32px
+    position: sticky
+    top: 0
+    background: #fff
+    &>nav>ul
+        display: flex
+        list-style: none
+        gap: 32px
+.logo
+    display: flex
+    align-items: center
+    gap: 8px
+    text-decoration: none
+    color: #141624
+.banner
+    height: 384px
+    overflow: hidden
+    margin-bottom: 144px
+    &Img
+        width: 100%
+        height: 384px
+        object-fit: cover
+        object-position: 0 -196px
+        border-radius: 12px
+        overflow: hidden
+
+.window
+    position: absolute
+    transform: translate(64px, -80%)
+    background: #fff
+    border: 1px solid #E8E8EA
+    border-radius: 12px
+    padding: 32px
+    box-shadow: 0px 12px 24px -6px rgba(24, 26, 42, .12)
+    &Topic
+        background: #4B6BFB
+        color: #fff
+
+.advertisement
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: #E8E8EA
+    color: #696A75
+    padding: 16px
+    margin: 0 256px
+    &>p
+        font-size: 14px
+    &>h2
+        font-size: 20px
+    &>&:nth-last-child(1)
+        font-size: 18px
+
+footer
+    background: #F6F6F7
+    padding: 64px 256px 0 256px
+
+.footer
+    &Top
+        display: flex
+        padding-bottom: 64px
+        &>*
+            flex: 1
+    &Column
+        display: flex
+        flex-direction: column
+        gap: 16px
+        &>strong
+            font-size: 18px
+        &>p
+            color: #696A75
+        &Flex
+            display: flex
+            justify-content: space-around
+    &Letter
+        background: #fff
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 32px
+        border-radius: 12px
+        padding: 32px
+        &Content
+            display: flex
+            &>*:nth-child(1)
+                font-size: 20px
+                color: #181A2A
+                font-weight: 600
+            &>*:nth-child(2)
+                color: #696A75
+                font-weight: 500
+        &Email
+            border: 1px solid #DCDDDF
+            border-radius: 6px
+            overflow: hidden
+            display: flex
+            &>*
+                border: none
+                background: none
+                cursor: pointer
+                padding: 12px
+            &>button
+                width: min-content
+                transition: .5s
+                display: flex
+                justify-content: center
+                align-items: center
+                border-left: 1px solid rgba(0, 0, 0, 0)
+                &:hover
+                    background: #eee
+                    border-left: 1px solid #DCDDDF
+
+        &>*
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 8px
+
+    &Bottom
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 32px 0
+        border-top: 1px solid #DCDDDF
+    &Submit
+        background: #4B6BFB
+        color: #FFFFFF
+        width: 100%
+        padding: 12px 20px
+        border: none
+        border-radius: 6px
+        cursor: pointer
+        font-size: 16px
+        font-weight: 500
+.smallColumn
+    display: flex
+    flex-direction: column
+    gap: 24px
+    &List
+        display: flex
+        flex-direction: column
+        gap: 8px
+
+.secondary
+    color: #181A2A
+    font-weight: 800
+
+.locator
+    font-size: 16px
+    color: #3B3C4A
+    background: none
+    border: none
+    border-radius: 6px
+    cursor: pointer
+    transition: .5s
+    padding: 2px 8px
+    text-decoration: none
+    &:hover
+        background: #333
+        color: #e6e6e6
+
+.post
+    &Title
+        font-size: 36px
+        color: #181A2A
+        padding: 16px 0 20px 0
+    &Info
+        padding-bottom: 32px
+    &Img
+        width: 100%
+        height: 462px
+        overflow: hidden
+        object-fit: cover
+        border-radius: 12px
+    &Content
+        padding: 32px 0 80px 0
+        font-size: 20px
+        color: #3B3C4A
+
+.user
+    margin-bottom: 100px
+    &Panel
+        width: 100%
+        background: #F6F6F7
+        border-radius: 12px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        gap: 24px
+        padding: 48px
+        margin: 24px 0 48px 0
+
+    &Field
+        display: flex
+        align-items: center
+        gap: 16px
+    &Avatar
+        border-radius: 50%
+        overflow: hidden
+        object-fit: cover
+    &Name
+        font-size: 20px
+        font-weight: 500
+        color: #181A2A
+    &Status
+        color: #696A75
+        font-size: 14px
+    &Description
+        font-size: 18px
+        color: #3B3C4A
+        text-align: center
+        line-height: 26px
+    &Contacts
+        display: flex
+        align-items: center
+        gap: 8px
+        &>button
+            width: 32px
+            height: 32px
+            padding: 8px
+            background: #696A75
+            border: none
+            border-radius: 6px
+            cursor: pointer
+
+.actions
+    display: flex
+    align-items: center
+    gap: 40px
+.search
+    background: #F4F4F5
+    display: flex
+    align-items: center
+    border-radius: 6px
+    height: max-content
+    &>*
+        border: none
+        background: none
+        padding: 8px 16px
+    &>input
+        padding-right: 0
+    &>button
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-left: 0
+        padding-right: 8px
+
+.themeField
+    border-radius: 100px
+    background: #E8E8EA
+    padding: 2px
+    width: 48px
+    cursor: pointer
+    transition: .25s
+    &Toggle
+        border-radius: 50%
+        background: #FFFFFF
+        padding: 6px
+        width: 24px
+        height: 24px
+        display: flex
+        justify-content: center
+        align-items: center
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .12)
+        transition: .25s
